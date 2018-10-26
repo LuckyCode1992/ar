@@ -4,7 +4,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -31,15 +30,15 @@ public class ARActivity extends FragmentActivity {
             // 准备调起AR的必要参数
             // AR_KEY:AR内容平台里申请的每个case的key
             // AR_TYPE:AR类型，目前0代表2D跟踪类型，5代表SLAM类型，后续会开放更多类型
-            String arkey = "10287900";//getIntent().getStringExtra(ARConfigKey.AR_KEY);
-            int arType = 0;//getIntent().getIntExtra(ARConfigKey.AR_TYPE, 0);
+            String arkey = getIntent().getStringExtra(ARConfigKey.AR_KEY);
+            int arType = getIntent().getIntExtra(ARConfigKey.AR_TYPE, 0);
             //String arPath = getIntent().getStringExtra(ARConfigKey.AR_PATH);
             Bundle data = new Bundle();
             JSONObject jsonObj = new JSONObject();
             try {
                 jsonObj.put(ARConfigKey.AR_KEY, arkey);
                 jsonObj.put(ARConfigKey.AR_TYPE, arType);
-              //  jsonObj.put(ARConfigKey.AR_PATH, arPath);
+                //  jsonObj.put(ARConfigKey.AR_PATH, arPath);
             } catch (JSONException e) {
                 e.printStackTrace();
             }

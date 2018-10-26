@@ -6,11 +6,27 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-<Button
-    android:id="@+id/easy_ar"
-    android:text="easy_ar"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_map"
+        android:text="地图"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_bear"
+        android:text="小熊"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_dizheng"
+        android:text="地震"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_cat"
+        android:text="小猫"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

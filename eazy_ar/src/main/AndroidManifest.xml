@@ -14,12 +14,6 @@
 
     <application
         android:allowBackup="true">
-        <activity android:name=".MainActivity">
-        </activity>
-
-        <activity
-            android:name=".IntroActivity"
-            android:screenOrientation="portrait"/>
 
         <!--禁止分屏-->
         <activity
